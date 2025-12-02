@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #111; color: #fff; }
+    header { padding: 60px; text-align: center; background: #222; }
+    nav { display: flex; justify-content: center; gap: 20px; padding: 15px; background: #000; position: sticky; top: 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 50px; max-width: 900px; margin: auto; }
+    h2 { border-bottom: 2px solid #444; padding-bottom: 10px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { background: #222; padding: 20px; border-radius: 10px; }
+    .card img, .card video { width: 100%; border-radius: 10px; }
+    footer { padding: 20px; text-align: center; background: #000; margin-top: 40px; }
+    .btn { background: #0af; color: #000; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 10px; }
+    .subsection { margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tu Nombre Aquí</h1>
+  <p>Creador de contenido • Diseñador • Editor</p>
+</header>
+
+<nav>
+  <a href="#sobre">Sobre mí</a>
+  <a href="#anuncios">Anuncios</a>
+  <a href="#contenido">Contenido</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <p>Aquí escribes quién eres, qué haces, qué estilo tienes y qué ofreces.</p>
+</section>
+
+<section id="anuncios">
+  <h2>Anuncios</h2>
+  <p>Aquí puedes mostrar tus anuncios divididos en Video, Imágenes y GIFs.</p>
+
+  <div class="subsection" id="videos">
+    <h3>Videos</h3>
+    <div class="grid">
+      <div class="card">
+        <video src="assets/video1.mp4" controls></video>
+        <p>Video anuncio 1</p>
+      </div>
+      <div class="card">
+        <video src="assets/video2.mp4" controls></video>
+        <p>Video anuncio 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection" id="imagenes">
+    <h3>Imágenes</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/imagen1.jpg" alt="Imagen anuncio" />
+        <p>Imagen anuncio 1</p>
+      </div>
+      <div class="card">
+        <img src="assets/imagen2.jpg" alt="Imagen anuncio" />
+        <p>Imagen anuncio 2</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection" id="gifs">
+    <h3>GIFs</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="assets/gif1.gif" alt="GIF anuncio" />
+        <p>GIF anuncio 1</p>
+      </div>
+      <div class="card">
+        <img src="assets/gif2.gif" alt="GIF anuncio" />
+        <p>GIF anuncio 2</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contenido">
+  <h2>Contenido</h2>
+  <p>Aquí puedes mostrar reels, miniaturas, diseños, banners, posts, historias, etc.</p>
+
+  <div class="grid">
+    <div class="card">
+      <img src="assets/contenido1.jpg" />
+      <p>Proyecto de contenido 1.</p>
+    </div>
+    <div class="card">
+      <img src="assets/contenido2.jpg" />
+      <p>Proyecto de contenido 2.</p>
+    </div>
+    <div class="card">
+      <img src="assets/contenido3.jpg" />
+      <p>Proyecto de contenido 3.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Email: tuemail@example.com</p>
+  <p>Instagram: @tunombre</p>
+  <p>TikTok: @tunombre</p>
+  <p>Twitter: @tunombre</p>
+</section>
+
+<footer>
+  <p>© 2025 Tu Nombre</p>
+</footer>
+
+</body>
+</html>
